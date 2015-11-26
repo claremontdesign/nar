@@ -1,0 +1,26 @@
+{
+    "name": "claremontdesign/nar",
+    "description": "NaturalAreaRugs Website",
+    "license": "ClaremontDesign/NAR License",
+    "authors": [
+        {
+            "name": "Dennes B Abing",
+            "email": "dennes.b.abing@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"Claremontdesign\\Nar\\":"src/"
+		},
+       "files": [
+            "src/Nar/helpers.php"
+        ]
+	},
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
