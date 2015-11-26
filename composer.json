@@ -13,7 +13,7 @@
 			"Claremontdesign\\Nar\\":"src/"
 		},
        "files": [
-            "src/Nar/helpers.php"
+            "src/Helpers/helpers.php"
         ]
 	},
     "autoload-dev": {
@@ -22,5 +22,11 @@
         ]
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+	"scripts": {
+		"post-update-cmd": [
+			"Claremontdesign\\Nar\\Nar::postUpdateCmd",
+			"php artisan vendor:publish --tag=public --force"
+		]
+	}
 }

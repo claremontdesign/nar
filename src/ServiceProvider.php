@@ -32,6 +32,14 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 		// Define the path for the view files
 		$this->loadViewsFrom(__DIR__ . '/../resources/views', cd_nar_tag());
 
+		$this->publishes([
+			__DIR__ . '/../resources/assets' => public_path('assets/nar/templates/'),
+				], 'public');
+
+		$this->publishes([
+			__DIR__ . '/../resources/views' => base_path('resources/views/claremontdesign/nar'),
+				], 'views');
+
 		// Loading the routes file
 		require __DIR__ . '/Http/routes.php';
 	}
