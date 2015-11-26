@@ -1,4 +1,4 @@
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1445794486736">
+<div class="vc_row wpb_row vc_row-fluid">
 	<div class="wpb_column vc_column_container vc_col-sm-12">
 		<div class="wpb_wrapper">
 			<div class="wpb_text_column wpb_content_element ">

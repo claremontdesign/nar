@@ -21,15 +21,15 @@ elixir(function(mix) {
 	mix.copy('resources/assets/swatches', '../../../public/assets/nar/templates/default/swatches');
 	mix.copy('resources/assets/images', '../../../public/assets/nar/templates/default/images');
 	mix.styles([
-		'nhr.css'
-	], '../../../public/assets/nar/templates/default/nar.css');
+		'nar.css'
+	], '../../../public/assets/nar/templates/default/css/nar.css');
 	mix.styles([
 		'all.css'
-	], '../../../public/assets/nar/templates/default/all.css');
+	], '../../../public/assets/nar/templates/default/css/all.css');
 	mix.scripts([
 		'jquery.js'
-	], '../../../public/assets/nar/templates/default/jquery.js');
+	], '../../../public/assets/nar/templates/default/js/jquery.js');
 	mix.scripts([
 		'all.js'
-	], '../../../public/assets/nar/templates/default/all.js');
+	], '../../../public/assets/nar/templates/default/js/all.js');
 });

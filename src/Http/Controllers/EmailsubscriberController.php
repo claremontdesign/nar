@@ -57,15 +57,6 @@ class EmailsubscriberController extends Controller
 		];
 		$data = ['email' => $request->email];
 		cd_narbase()->emailSubscriberRepo()->create($data);
-
-//		$inputs = app('request')->all();
-//		$this->viewOptions = $inputs;
-//		$this->viewName = $this->viewName('contact.partial.email');
-//		$this->recipient = $inputs['email'];
-//		$this->sender = cd_config('contact.support.email');
-//		$this->senderName = cd_config('contact.support.name');
-//		$this->subject = $inputs['subject'];
-
 		cd_flash_msg('Email address saved!');
 		return view($this->viewName('subscribe.index'), compact('subscribe'));
 	}

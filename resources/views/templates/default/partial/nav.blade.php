@@ -69,7 +69,7 @@ $nav = [
 	'rugpads' => [
 		'anchor' => 'Rug Pads',
 		'url' => '/rugpads',
-		'enable' => true
+		'enable' => false
 	],
 	'contemporary' => [
 		'anchor' => 'Contemporary',
@@ -96,12 +96,12 @@ $nav = [
 	'shag' => [
 		'anchor' => 'Shag',
 		'url' => '/custom-shag-rugs',
-		'enable' => true,
+		'enable' => false,
 	],
 	'runners' => [
 		'anchor' => 'Runners',
 		'url' => '/stair-runners',
-		'enable' => true,
+		'enable' => false,
 	],
 	'specialty-items' => [
 		'anchor' => 'Specialty Items',

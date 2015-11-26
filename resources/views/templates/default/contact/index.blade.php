@@ -15,13 +15,13 @@
 
 	<h2>Email</h2>
 	<p>
-		General Information: <a href="mailto:info@naturalhomerugs.com">info@naturalhomerugs.com</a>
+		General Information: <a href="mailto:info@naturalarearugs.com">info@naturalarearugs.com</a>
 		<br />
-		Customer Service: <a href="mailto:customerservice@naturalhomerugs.com">customerservice@naturalhomerugs.com</a>
+		Customer Service: <a href="mailto:customerservice@naturalarearugs.com">customerservice@naturalarearugs.com</a>
 		<br />
-		Sales: <a href="mailto:sales@naturalhomerugs.com">sales@naturalhomerugs.com</a>
+		Sales: <a href="mailto:sales@naturalarearugs.com">sales@naturalarearugs.com</a>
 		<br />
-		Website: <a href="mailto:webmaster@naturalhomerugs.com">webmaster@naturalhomerugs.com</a>
+		Website: <a href="mailto:webmaster@naturalarearugs.com">webmaster@naturalarearugs.com</a>
 		<br />
 	</p>
 	<div class="col-md-6">
@@ -35,7 +35,7 @@
 	<div class="col-md-6">
 		<h2>Address</h2>
 		<p>
-			Natural Home Rugs
+			Natural Are Rugs
 			<br />324 S. Beverly Dr., Suite #282
 			<br />Beverly Hills, CA 90212
 		</p>

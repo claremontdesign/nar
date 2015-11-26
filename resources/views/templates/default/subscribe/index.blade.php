@@ -4,7 +4,7 @@
 @section('meta_keywords', 'Subscribe')
 @section('meta_description', 'Subscribe')
 @section('content')
-<h1>NHR Subscribe</h1>
+<h1>Subscribe</h1>
 
 {!! view(cd_narbase_view_name('subscribe.partial.form'), compact('subscribe')) !!}
 
