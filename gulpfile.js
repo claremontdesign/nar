@@ -1,8 +1,5 @@
 var elixir = require('laravel-elixir');
-elixir.config.srcDir = 'src';
-elixir.config.cssOutput = '../../../public/assets/nar/templates/default/';
-elixir.config.jsOutput = '../../../public/assets/nar/templates/default/';
-elixir.config.assetDir = '/public/assets/nar/templates/default/';
+elixir.config.assetDir = 'resources/assets';
 /*
  *
  |--------------------------------------------------------------------------
@@ -15,21 +12,5 @@ elixir.config.assetDir = '/public/assets/nar/templates/default/';
  |
  */
 elixir(function(mix) {
-	mix.copy('resources/assets/woocommerce', '../../../public/assets/nar/templates/default/plugins/woocommerce');
-	mix.copy('resources/assets/font-awesome/fonts', '../../../public/assets/nar/templates/fonts');
-	mix.copy('resources/assets/customrugs', '../../../public/assets/nar/templates/default/customrugs');
-	mix.copy('resources/assets/swatches', '../../../public/assets/nar/templates/default/swatches');
-	mix.copy('resources/assets/images', '../../../public/assets/nar/templates/default/images');
-	mix.styles([
-		'nar.css'
-	], '../../../public/assets/nar/templates/default/css/nar.css');
-	mix.styles([
-		'all.css'
-	], '../../../public/assets/nar/templates/default/css/all.css');
-	mix.scripts([
-		'jquery.js'
-	], '../../../public/assets/nar/templates/default/js/jquery.js');
-	mix.scripts([
-		'all.js'
-	], '../../../public/assets/nar/templates/default/js/all.js');
+	mix.copy('resources/assets/', '../../../public/assets/nar/templates/');
 });

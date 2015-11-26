@@ -25,4 +25,13 @@ class Nar extends \Claremontdesign\Narbase\Narbase
 	{
 		return __DIR__ . '/../config/config.php';
 	}
+
+	/**
+	 * Do some works after the composer event: post-package-install
+	 */
+	public static function postUpdateCmd()
+	{
+
+	}
+
 }

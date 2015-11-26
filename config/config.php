@@ -8,7 +8,7 @@ return [
 		]
 	],
 	'back' => [
-		'enable' => true,
+		'enable' => false,
 	],
 	'front' => [
 		'design' => [
