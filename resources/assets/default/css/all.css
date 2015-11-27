@@ -27984,6 +27984,29 @@ font-weight: normal;
 font-family: "Montserrat",sans-serif;
 }
 
+/* NAR Layout Changes 11-27-15 */
+
+.site-navigation .navbar-header a.navbar-brand .site-tagline{
+    font-size: 20px;
+}
+
+.quick-rug-finder .title{
+    font-size: 24px;
+}
+
+.quick-rug-finder select{
+    border: solid 1px #ccc;
+    height: 32px;
+    width: 157px;
+}
+
+.woocommerce div.product form.cart{
+    border-bottom: 0px solid;
+    margin-bottom: 0px;
+}
+
+/* NAR Layout Changes 11-27-15 */
+
 }
 
 

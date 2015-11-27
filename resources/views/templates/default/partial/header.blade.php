@@ -10,6 +10,14 @@
 					<ul class="nav navbar-nav navbar-right sm" data-smartmenus-id="14485146681736191">
 						<li class="dropdown">
 							<span class="topnav-label hidden-xs">
+                                                                <a href="#">ORDER TRACKING</a>
+                                                                <span>|</span>
+                                                                <a href="#">BLOG</a>
+                                                                <span>|</span>
+                                                                <a href="#">MY ACCOUNT</a>
+                                                                <span>|</span>
+                                                                <a href="#">SHOPPING CART</a>
+                                                                <span>|</span>
 								<a href="{{ cd_route('contact-us') }}">Contact Us</a>
 								<span>|</span>
 								<a href="{{ cd_route('about-us') }}">About Us</a>
