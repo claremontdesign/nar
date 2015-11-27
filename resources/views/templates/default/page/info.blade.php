@@ -50,7 +50,7 @@ Should you find it too difficult to remove a stain, consult professional carpet 
 <strong>Please note that prices, products and options are subject to change without notice.</strong> Tax will be charged to all orders shipped within California. No sales tax is collected for any orders shipped outside of California.
 
 
-<h2>Privacy Policy</h2>
+<h2 href="#PrivacyPolicy">Privacy Policy</h2>
 <p>Natural Home Rugs respects your privacy. You can be assured that any information you have provided will not be disseminated to other parties, aside from Yahoo! during order processing. We may periodically send newsletters via email upon request. Should you wish not to receive such messages, just notify us via email and we will delete your information from our client service mail list.</p>
 
 <p>This site's ordering section is hosted by Yahoo! Store. Yahoo! hosts certain store pages, ordering systems, and order data. As such, Yahoo! automatically gathers order information but can only use such data collectively. If you logged in this store via Yahoo! Shopping, Yahoo! also automatically collects information about your shopping experience. For additional information as to how Yahoo! uses this information, please refer to the Yahoo! Privacy Policy.</p>
