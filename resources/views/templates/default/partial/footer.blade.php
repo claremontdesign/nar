@@ -9,7 +9,7 @@
 							<h4 class="widget-title">EMAIL NEWSLETTER HERE</h4>
 							<div class="textwidget">
 								<div class="email-newsletter">
-									Sign Up and SAVE $30 on First Order! (<a href="#">See Details</a>)<br/>
+									Sign Up and SAVE $30<br/>on First Order! (<a href="#">See Details</a>)<br/>
 									{!! view(cd_narbase_view_name('subscribe.partial.form'), compact('subscribe')) !!}
 								</div>
 								<div class="email-newsletter">
@@ -21,7 +21,7 @@
 					</div>
 
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<aside id="text-2" class="widget widget_text"><h4 class="widget-title">MATURAL HOME RUGS</h4>
+						<aside id="text-2" class="widget widget_text"><h4 class="widget-title">NATURAL AREA RUGS</h4>
 							<div class="textwidget">
 								<ul>
 									<li><a href="{{ cd_route('about-us') }}">About Us</a></li>
