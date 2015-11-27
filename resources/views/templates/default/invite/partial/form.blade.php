@@ -1,7 +1,7 @@
 <form method="post" action="{{ route('invite') }}" role="form" id="inviteForm">
 	{{ csrf_field() }}
 	<div class="form-group">
-		<label for="email">Your friend's Email:</label>
+		<!--<label for="email">Your friend's Email:</label>-->
 		<input type="email" name="email" required placeholder="Friend's Email Address" class="form-control" value="{{ old('email') }}" />
 	</div>
 	<div class="form-group" style="display: none">
@@ -29,6 +29,6 @@
 
 	<div class="form-group form-action">
 		<input type="hidden" name="submit" value="1" />
-		<input type="submit" value="Submit" class="btn btn-success" />
+		<input type="submit" value="Invite a Friend" class="btn btn-success" />
 	</div>
 </form>
