@@ -17,11 +17,13 @@ namespace Claremontdesign\Nar\Http\Controllers;
  */
 use Claremontdesign\Narbase\Http\Controllers\SubscribeController as Controller;
 use Claremontdesign\Nar\Traits\Viewname;
+use Claremontdesign\Cdbase\Traits\Messenger;
 
 class EmailsubscriberController extends Controller
 {
 
-	use Viewname;
+	use Viewname,
+	 Messenger;
 
 	/**
 	 * REturn the view prefix
@@ -48,7 +50,7 @@ class EmailsubscriberController extends Controller
 		];
 
 		$this->validate($request, [
-			'email' => 'required|unique:' . $mailingListTable . ',' . $mailingListEmailColumn,
+				 'email' => 'required|unique:' . $mailingListTable . ',' . $mailingListEmailColumn,
 				], $validatorMessages);
 
 		$subscribe = [
@@ -58,7 +60,58 @@ class EmailsubscriberController extends Controller
 		$data = ['email' => $request->email];
 		cd_narbase()->emailSubscriberRepo()->create($data);
 		cd_flash_msg('Email address saved!');
+
+		$couponToEmail = cd_config('database.tables.coupons.email');
+
+		if(!empty($couponToEmail))
+		{
+			$code = $this->_getCouponCode();
+			if(!empty($code))
+			{
+				$this->viewOptions = ['code' => $code];
+				$this->viewName = $this->viewName('subscribe.partial.email');
+				$this->sender = cd_config('contact.support.email');
+				$this->senderName = cd_config('contact.support.name');
+				$this->recipient = $request->email;
+				$this->recipientName = $request->email;
+				$this->subject = cd_config('site.title');
+				$sent = $this->send();
+				if($sent)
+				{
+					cd_flash_msg('A coupon code has been successfully sent to your email address!');
+				}
+				else
+				{
+					cd_flash_errormsg('There was an error sending an email to you. Kindly try again!');
+				}
+			} else {
+				cd_flash_msg('We cannot find any available coupon code at this time. Kindly contact Customer Support.');
+			}
+		}
+
 		return view($this->viewName('subscribe.index'), compact('subscribe'));
+	}
+
+	/**
+	 * Return a CouponCode for today
+	 */
+	protected function _getCouponCode()
+	{
+		$couponToDay = cd_config('database.tables.coupons.today');
+		if($couponToDay)
+		{
+			$file = __DIR__ . '/../../../config/couponCodes.php';
+			if(file_exists($file))
+			{
+				$couponCodes = require $file;
+				$today = date('n/d/Y');
+				if(array_key_exists($today, $couponCodes))
+				{
+					return $couponCodes[$today];
+				}
+			}
+		}
+		return null;
 	}
 
 }
